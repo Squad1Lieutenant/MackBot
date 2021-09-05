@@ -1,2 +1,2 @@
-const discord = require(discord.js);
-const token = tokens.json()
+const webGrabber = require("./web-grabber");
+webGrabber.writeToFile();
