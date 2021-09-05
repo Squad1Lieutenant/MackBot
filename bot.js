@@ -1,21 +1,8 @@
-const webGrabber = require("./web-grabber");
-const fs = require('fs');
-const jsdom = require("jsdom");
-const jquery = require('jquery');
-const { error } = require("console");
-const { JSDOM } = jsdom;
+const { Client, Intents} = require('discord.js');
+const mackBot = new Client({intents: [Intents.FLAGS.GUILDS]});
 
+mackBot.on('ready', () => {
+    console.log('Logged in as bot #');
+});
 
-webGrabber.writeToFile();
-
-try {
-    const fileHtml = fs.readFileSync('mack.html');
-    var file = fileHtml;
-} catch(err){
-    console.log(err)
-    return
-}
-const dom = new JSDOM(file);
-const $ = jquery(dom.window);
-const data = $("div.lw_today").html();
-console.log(data);
+mackBot.login('ODgzNDI0NDYyNjcyOTE2NTMw.YTJvJQ.Y5kSBXIO9_TnoS6wqUzZJN137PU');
