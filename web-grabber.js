@@ -16,7 +16,7 @@ function httpGetAsync(theUrl, callback) {
 function writeToFile() {
   httpGetAsync('https://www.merrimack.edu/campus-life/getting-involved/campus-programming-calendar.php', function(result) {
       var data = codeFormatter(result);
-      console.log(data);
+      //console.log(data);
       fs.writeFile('mack.html', data, err => {
         if (err) {
           console.error(err);
