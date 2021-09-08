@@ -5,6 +5,8 @@ const mackBot = new Discord.Client({
     partials: ['MESSAGE', 'CHANNEL', 'REACTION']
 });
 const { MessageEmbed } = require('discord.js');
+const { token } = require('./tokens.json');
+
 
 const channel = '883426061004713994'; //Channel for which role messages are placed in
 const guild = mackBot.guilds.cache.get('<882718411631763507>');
@@ -188,4 +190,4 @@ mackBot.on('messageReactionAdd', async (reaction, user) => {
     console.log(`${reaction.message.id}'s gained a reaction!`);
 });
 
-mackBot.login('ODgzNDI0NDYyNjcyOTE2NTMw.YTJvJQ.fRDybq7l7B7axahRDtwKmv5fMsY');
+mackBot.login(token);

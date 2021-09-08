@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "discordjs-reaction-role": "^2.0.1",
-    "reaction-role": "^4.1.1"
-  }
-}
