@@ -9,7 +9,7 @@ const { token } = require('./tokens.json');
 const fs = require('fs');
 
 //Channel for which role messages are placed in
-const channel = '885902034048544799'; 
+const channel = '882721192929288244'; 
 const guild = mackBot.guilds.cache.get('<882718411631763507>');
 
 //Role emoji definitions
@@ -142,7 +142,7 @@ let minorEmbed = new MessageEmbed()
 
 let dormEmbed = new MessageEmbed()
     .setColor('#FAB20B')
-    .setTitle('Select your major(s)')
+    .setTitle('Select where you live')
     .setThumbnail('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Merrimack_Warriors.svg/1200px-Merrimack_Warriors.svg.png')
     .setDescription(monicanE + ' - Monican\n'
         + ashE + ' - Ash\n'
@@ -333,169 +333,169 @@ mackBot.on('messageReactionAdd', async (reaction, user) => {
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === stemMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === stemMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === stemMajor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === businessMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === businessMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === businessMajor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === artsMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === artsMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === artsMajor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === humanitiesMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === humanitiesMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === humanitiesMajor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === healthMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === healthMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === healthMajor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === interdisciplinaryMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === interdisciplinaryMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === interdisciplinaryMajor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === stemMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === stemMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === stemMinor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === businessMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === businessMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === businessMinor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === artsMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === artsMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === artsMinor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === humanitiesMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === humanitiesMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === humanitiesMinor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === healthMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === healthMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === healthMinor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === interdisciplinaryMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === interdisciplinaryMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === interdisciplinaryMinor));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === monicanE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === monicanE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === monican));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === ashE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === ashE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === ash));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === deeganE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === deeganE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === deegan));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === obrienE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === obrienE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === obrien));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === royalE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === royalE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === royal));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === northE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === northE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === northRes));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === southE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === southE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === sourthRes));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === townhousesE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === townhousesE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === townhouses));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === seniorApptsE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === seniorApptsE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === seniorAppts));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === commuterE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === commuterE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === commuter));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === heHimE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === heHimE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === heHim));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === sheHerE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === sheHerE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === sheHer));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === theyThemE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === theyThemE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === theyThem));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === otherPronounsE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === otherPronounsE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === otherPronouns));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === voiceE && user.bot === false) {
+    if (reaction.message.id === pingsMessageId && reaction.emoji.name === voiceE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === vc));
         console.log("addedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === meetupsE && user.bot === false) {
+    if (reaction.message.id === pingsMessageId && reaction.emoji.name === meetupsE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.add(reaction.message.guild.roles.cache.find(role => role.id === meetup));
         console.log("addedRole");
@@ -554,169 +554,169 @@ mackBot.on('messageReactionRemove', async (reaction, user) => {
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === stemMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === stemMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === stemMajor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === businessMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === businessMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === businessMajor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === artsMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === artsMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === artsMajor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === humanitiesMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === humanitiesMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === humanitiesMajor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === healthMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === healthMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === healthMajor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === interdisciplinaryMajorE && user.bot === false) {
+    if (reaction.message.id === majorMessageId && reaction.emoji.name === interdisciplinaryMajorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === interdisciplinaryMajor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === stemMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === stemMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === stemMinor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === businessMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === businessMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === businessMinor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === artsMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === artsMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === artsMinor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === humanitiesMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === humanitiesMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === humanitiesMinor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === healthMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === healthMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === healthMinor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === interdisciplinaryMinorE && user.bot === false) {
+    if (reaction.message.id === minorMessageId && reaction.emoji.name === interdisciplinaryMinorE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === interdisciplinaryMinor));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === monicanE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === monicanE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === monican));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === ashE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === ashE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === ash));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === deeganE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === deeganE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === deegan));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === obrienE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === obrienE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === obrien));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === royalE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === royalE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === royal));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === northE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === northE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === northRes));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === southE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === southE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === sourthRes));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === townhousesE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === townhousesE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === townhouses));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === seniorApptsE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === seniorApptsE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === seniorAppts));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === commuterE && user.bot === false) {
+    if (reaction.message.id === housingMessageId && reaction.emoji.name === commuterE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === commuter));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === heHimE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === heHimE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === heHim));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === sheHerE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === sheHerE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === sheHer));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === theyThemE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === theyThemE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === theyThem));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === otherPronounsE && user.bot === false) {
+    if (reaction.message.id === pronounsMessageId && reaction.emoji.name === otherPronounsE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === otherPronouns));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === voiceE && user.bot === false) {
+    if (reaction.message.id === pingsMessageId && reaction.emoji.name === voiceE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === vc));
         console.log("removedRole");
     }
 
-    if (reaction.message.id === gradeMessageId && reaction.emoji.name === meetupsE && user.bot === false) {
+    if (reaction.message.id === pingsMessageId && reaction.emoji.name === meetupsE && user.bot === false) {
         var roleMember = reaction.message.guild.members.cache.get(user.id);
         roleMember.roles.remove(reaction.message.guild.roles.cache.find(role => role.id === meetup));
         console.log("removedRole");
